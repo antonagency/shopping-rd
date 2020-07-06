@@ -15,7 +15,7 @@ Guía completa de instalación en [WordPress](https://anton.agency/woocommerce-e
  
 # Preguntas Frecuentes 
  
-**¿Cómo anádir precios de envío para provincia?
+**¿Cómo anádir precios de envío para provincia?**
  
 1. Dirijase a WooCommerce.
 2. Vaya a la sección de ajustes.
@@ -27,7 +27,7 @@ Guía completa de instalación en [WordPress](https://anton.agency/woocommerce-e
 8. Luego, haga clic en añadir método de envío y seleccione el tipo de envío.
 9. Haga clic en guardar y listo.
  
-**¿Cómo agrego el precio para una provincia? =
+**¿Cómo agrego el precio para una provincia?**
  
  1. Haga clic en editar en la zona de envío añadida.
  2. Asigne el monto de su preferencia.
