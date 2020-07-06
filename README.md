@@ -1,8 +1,5 @@
 # Shopping RD
 
-
-# Descripción
- 
 Shipping RD permite añadir precios de envíos por provincias en República Dominicana, no quiere configuración adicional. Esta solución ayudará a los comerciones a gestionar diferentes costes para sus productos ya sea en el interior del país como en la capital.
 
 # Historia
