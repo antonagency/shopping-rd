@@ -33,4 +33,4 @@ Guía completa de instalación en [WordPress](https://anton.agency/woocommerce-e
  2. Asigne el monto de su preferencia.
 
 
- Para añadir otra provincia, solo debe sepetir el proceso anterior para cada una.
+ Para añadir otra provincia, solo debe repetir el proceso anterior para cada una.
