@@ -1,4 +1,4 @@
-# shopping-rd
+# Shopping RD
 
 
 == Descripción ==
@@ -12,7 +12,7 @@ Shipping RD permite añadir precios de envíos por provincias en República Domi
 
 Guía completa de instalación en [WordPress](https://anton.agency/woocommerce-envios-por-provincia-republica-dominicana/ "nuestro blog")
  
-== Frequently Asked Questions ==
+== Preguntas Frecuentes ==
  
 = ¿Cómo anádir precios de envío para provincia? =
  
