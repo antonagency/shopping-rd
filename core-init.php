@@ -9,43 +9,43 @@
 // If this file is called directly, abort. //
 if ( ! defined( 'WPINC' ) ) {die;} // end if
 // Define Our Constants
-define('SR_CORE_INC',dirname( __FILE__ ).'/assets/inc/');
-define('SR_CORE_IMG',plugins_url( 'assets/img/', __FILE__ ));
-define('SR_CORE_CSS',plugins_url( 'assets/css/', __FILE__ ));
-define('SR_CORE_JS',plugins_url( 'assets/js/', __FILE__ ));
+define('SRD_ASSETS_INC',dirname( __FILE__ ).'/assets/inc/');
+define('SRD_ASSETS_IMG',plugins_url( 'assets/img/', __FILE__ ));
+define('SRD_ASSETS_CSS',plugins_url( 'assets/css/', __FILE__ ));
+define('SRD_ASSETS_JS',plugins_url( 'assets/js/', __FILE__ ));
 /*
 *
 *  Register CSS
 *
 */
-function sr_register_core_css(){
-wp_enqueue_style('sr-core', SR_CORE_CSS . 'sr-core.css',null,time(),'all');
+function srd_add_styles(){
+wp_enqueue_style('sr-core', SRD_ASSETS_CSS . 'sr-core.css',null,time(),'all');
 };
-add_action( 'wp_enqueue_scripts', 'sr_register_core_css' );    
+add_action( 'wp_enqueue_scripts', 'srd_add_styles' );    
 /*
 *
 *  Register JS/Jquery Ready
 *
 */
-function sr_register_core_js(){
+function srd_add_javascripts(){
 // Register Core Plugin JS	
-wp_enqueue_script('sr-core', SR_CORE_JS . 'sr-core.js','jquery',time(),true);
+wp_enqueue_script('sr-core', SRD_ASSETS_JS . 'sr-core.js','jquery',time(),true);
 };
-add_action( 'wp_enqueue_scripts', 'sr_register_core_js' );    
+add_action( 'wp_enqueue_scripts', 'srd_add_javascripts' );    
 /*
 *
 *  Includes
 *
 */ 
 // Load the Functions
-if ( file_exists( SR_CORE_INC . 'sr-core-functions.php' ) ) {
-	require_once SR_CORE_INC . 'sr-core-functions.php';
+if ( file_exists( SRD_ASSETS_INC . 'sr-core-functions.php' ) ) {
+	require_once SRD_ASSETS_INC . 'sr-core-functions.php';
 }     
 // Load the ajax Request
-if ( file_exists( SR_CORE_INC . 'sr-ajax-request.php' ) ) {
-	require_once SR_CORE_INC . 'sr-ajax-request.php';
+if ( file_exists( SRD_ASSETS_INC . 'sr-ajax-request.php' ) ) {
+	require_once SRD_ASSETS_INC . 'sr-ajax-request.php';
 } 
 // Load the Shortcodes
-if ( file_exists( SR_CORE_INC . 'sr-shortcodes.php' ) ) {
-	require_once SR_CORE_INC . 'sr-shortcodes.php';
+if ( file_exists( SRD_ASSETS_INC . 'sr-shortcodes.php' ) ) {
+	require_once SRD_ASSETS_INC . 'sr-shortcodes.php';
 }

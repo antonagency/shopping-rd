@@ -24,9 +24,9 @@ require_once( plugin_dir_path( __FILE__ ) . 'core-init.php' );
 /**
  * STATE ZONES LIST FOR DOMINICAN REPUBLIC
  */
-add_filter( 'woocommerce_states', 'custom_woocommerce_states' );
+add_filter( 'woocommerce_states', 'srd_add_custom_states_for_rd' );
 
-function custom_woocommerce_states( $states ) {
+function srd_add_custom_states_for_rd( $states ) {
 
   $states['DO'] = array(
     'DO1' => 'Distrito Nacional',

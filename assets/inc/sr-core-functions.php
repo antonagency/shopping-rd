@@ -13,19 +13,19 @@ if ( ! defined( 'WPINC' ) ) {die;} // end if
 * Custom Front End Ajax Scripts / Loads In WP Footer
 *
 */
-function sr_frontend_ajax_form_scripts(){
+function srd_add_custom_ajax_scripts(){
 ?>
 <script type="text/javascript">
 jQuery(document).ready(function($){
     "use strict";
     // add basic front-end ajax page scripts here
-    $('#sr_custom_plugin_form').submit(function(event){
+    $('#srd_custom_plugin_form').submit(function(event){
         event.preventDefault();
         // Vars
         var myInputFieldValue = $('#myInputField').val();
         // Ajaxify the Form
         var data = {
-            'action': 'sr_custom_plugin_frontend_ajax',
+            'action': 'srd_custom_plugin_frontend_ajax',
             'myInputFieldValue':   myInputFieldValue,
         };
         
@@ -36,17 +36,17 @@ jQuery(document).ready(function($){
                 if(response.Status == true)
                 {
                     console.log(response.message);
-                    $('#sr_custom_plugin_form_wrap').html(response);
+                    $('#srd_custom_plugin_form_wrap').html(response);
 
                 }
                 else
                 {
                     console.log(response.message);
-                    $('#sr_custom_plugin_form_wrap').html(response);
+                    $('#srd_custom_plugin_form_wrap').html(response);
                 }
         });
     });
 }(jQuery));    
 </script>
 <?php }
-add_action('wp_footer','sr_frontend_ajax_form_scripts');
+add_action('wp_footer','srd_add_custom_ajax_scripts');
